@@ -7,21 +7,23 @@
         <h3 class="box-title">User Profile View</h3>
     </div><!-- /.box-header -->
     <!-- form start -->
-    {{ Form::open(array('action' => URL::previous())) }}
+    {{ Form::open(array('url' => URL::previous(), 'method' => 'get' )) }}
         <div class="box-body">
-                <div class="form-group">
-                    <label for="email">Email address: </label> {{ $user['email'] }}
-                </div>
             <div class="form-group">
-                <label for="datetime">Created Datetime: </label> {{ $user['created_at'] }}
+                {{ Form::label('email', 'E-Mail Address: '); }}
+                {{ Form::email('email', $user['email'], array('class' => 'form-control','disabled')); }}
             </div>
             <div class="form-group">
-                <label for="datetime">Updated Datetime: </label> {{ $user['updated_at'] }}
+                {{ Form::label('datetime', 'Created Datetime: '); }}
+                {{ Form::text('created_at', $user['created_at'], array('class' => 'form-control','disabled')); }}
+            </div>
+            <div class="form-group">
+                {{ Form::label('datetime', 'Updated Datetime: '); }}
+                {{ Form::text('updated_at', $user['updated_at'], array('class' => 'form-control','disabled')); }}
             </div>
         </div><!-- /.box-body -->
-
         <div class="box-footer">
-            <button class="btn btn-primary">Back to Users List</button>
+            {{ Form::submit('Back to Users List',array('class' => 'btn btn-primary')); }}
         </div>
     {{ Form::close() }}
 </div>
