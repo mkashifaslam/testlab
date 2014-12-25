@@ -1,0 +1,1 @@
+E:\Development\wamp\www\beta-product\app/views/users/delete.blade.php

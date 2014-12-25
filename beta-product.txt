@@ -1,0 +1,4 @@
+host : ec2-54-225-255-208.compute-1.amazonaws.com
+db   : ddv1tc80kg0rfm
+usern: rbirjerntrcbcd
+paswd: 4k4tminCqqR8T1NrmvbZqAIuS8
