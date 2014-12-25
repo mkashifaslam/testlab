@@ -17,7 +17,7 @@ class UserController extends BaseController {
 
 	public function getIndex()
 	{
-        $users = User::all()->toArray();
+        $users = User::paginate(100);
         return View::make('user.list')->withUsers($users);
 	}
     public function getView($id)

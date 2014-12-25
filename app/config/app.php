@@ -15,7 +15,7 @@ return array(
 
 	'debug' => false,
         
-        'site_name' => 'Beta Product',
+        'site_name' => 'Admin Panel',
 	/*
 	|--------------------------------------------------------------------------
 	| Application URL

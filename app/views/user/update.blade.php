@@ -7,7 +7,7 @@
         <h3 class="box-title">User Profile Update</h3>
     </div><!-- /.box-header -->
     <!-- form start -->
-    <form role="form">
+    {{ Form::open(array('action' => URL::previous())) }}
         <div class="box-body">
             <div class="form-group">
                 <label for="exampleInputEmail1">Email address</label>
@@ -22,7 +22,7 @@
         <div class="box-footer">
             <button class="btn btn-primary" type="submit">Update</button>
         </div>
-    </form>
+    {{ Form::close() }}
 </div>
 
 @endsection

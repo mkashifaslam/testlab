@@ -7,7 +7,7 @@
         <h3 class="box-title">User Profile View</h3>
     </div><!-- /.box-header -->
     <!-- form start -->
-    <form role="form">
+    {{ Form::open(array('action' => URL::previous())) }}
         <div class="box-body">
                 <div class="form-group">
                     <label for="email">Email address: </label> {{ $user['email'] }}
@@ -23,7 +23,7 @@
         <div class="box-footer">
             <button class="btn btn-primary">Back to Users List</button>
         </div>
-    </form>
+    {{ Form::close() }}
 </div>
 
 @endsection

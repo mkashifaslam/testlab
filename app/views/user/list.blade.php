@@ -31,14 +31,11 @@
                                 </tr>
                             @endforeach
                         </tbody>
-<!--                        <tfoot>
+                        <tfoot>
                             <tr>
-                                <th>ID</th>
-                                <th>Email</th>
-                                <th>Created Datetime</th>
-                                <th>Updated Datetime</th>
+                                <td colspan="5">{{ $users->links(); }}</td>
                             </tr>
-                        </tfoot>-->
+                        </tfoot>
                     </table>
                 </div><!-- /.box-body -->
             </div><!-- /.box -->
