@@ -1,11 +1,11 @@
 <?php
 
-$url = parse_url(getenv("DATABASE_URL"));
+/*$url = parse_url(getenv("DATABASE_URL"));
 
 $host     = $url["host"];
 $username = $url["user"];
 $password = $url["pass"];
-$database = substr($url["path"], 1);
+$database = substr($url["path"], 1);*/
 
 return array(
 
@@ -33,7 +33,7 @@ return array(
 	|
 	*/
 
-	'default' => 'pgsql',
+	'default' => 'mysql',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -62,7 +62,7 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'beta_product',
+			'database'  => 'phplab',
 			'username'  => 'root',
 			'password'  => '',
 			'charset'   => 'utf8',
@@ -70,7 +70,7 @@ return array(
 			'prefix'    => '',
 		),
 
-		'pgsql' => array(
+		/*'pgsql' => array(
 			'driver'   => 'pgsql',
 			'host'     => $host,
 			'database' => $database,
@@ -79,7 +79,7 @@ return array(
 			'charset'  => 'utf8',
 			'prefix'   => '',
 			'schema'   => 'public',
-		),
+		),*/
 
 		'sqlsrv' => array(
 			'driver'   => 'sqlsrv',

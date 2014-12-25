@@ -27,7 +27,7 @@ return array(
 	|
 	*/
 
-	'url' => 'http://localhost/beta-product/public/',
+	'url' => 'http://localhost/phplab/public/',
 
 	/*
 	|--------------------------------------------------------------------------

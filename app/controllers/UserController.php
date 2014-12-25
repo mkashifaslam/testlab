@@ -17,22 +17,22 @@ class UserController extends BaseController {
 
 	public function getIndex()
 	{
-            $users = User::all()->toArray();
-            return View::make('user.list')->withUsers($users);
+        $users = User::all()->toArray();
+        return View::make('user.list')->withUsers($users);
 	}
-        public function getView($id)
-        {
-            $user = User::find($id)->toArray();
-            return View::make('user.view')->withUser($user);
-        }
-        public function getUpdate($id)
-        {
-            $user = User::find($id)->toArray();
-            return View::make('user.update')->withUser($user);
-        }
-        public function getDelete()
-        {
-            return View::make('user.delete');
-        }
+    public function getView($id)
+    {
+        $user = User::find($id)->toArray();
+        return View::make('user.view')->withUser($user);
+    }
+    public function getUpdate($id)
+    {
+        $user = User::find($id)->toArray();
+        return View::make('user.update')->withUser($user);
+    }
+    public function getDelete()
+    {
+        return View::make('user.delete');
+    }
 
 }
